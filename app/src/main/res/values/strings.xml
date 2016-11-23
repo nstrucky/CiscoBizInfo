@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cisco Business Info</string>
+    <string name="company_email">localhost@gmail.com</string>
+    <string name="company_phone">(127) 001-3306</string>
+    <string name="company_address">5200 Paramount Pkwy, Morrisville, NC 27560</string>
+    <string name="company_hours">24/7</string>
+
+</resources>

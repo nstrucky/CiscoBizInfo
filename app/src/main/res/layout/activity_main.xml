@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.netjob.bizinfo.MainActivity"
+
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/product_large"
+            android:id="@+id/imageView6"
+            android:alpha=".25" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageview_cisco"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/cisco2" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:padding="12dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3"
+                >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_place_black_24dp"
+                    android:id="@+id/imageView5" />
+
+                <Space android:layout_height="match_parent"
+                    android:layout_width="28dp"
+                    android:layout_rowSpan="4"/>
+
+                <TextView
+                    android:text="@string/company_address"
+                    android:layout_width="240dp"
+                    android:layout_height="53dp"
+                    android:id="@+id/textView_address"
+
+                    android:textAppearance="@style/AppTheme"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="textStart"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/menuFont" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_access_time_black_24dp"
+                    android:id="@+id/imageView2" />
+
+                <TextView
+                    android:text="@string/company_hours"
+                    android:layout_width="243dp"
+                    android:layout_height="49dp"
+                    android:id="@+id/textView_phen"
+                    android:textAlignment="textStart"
+                    android:gravity="center_vertical"
+                    android:typeface="sans"
+                    android:textAppearance="@style/AppTheme"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/menuFont" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_call_black_24dp"
+                    android:id="@+id/imageView3" />
+
+                <TextView
+                    android:text="@string/company_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:id="@+id/textView8"
+                    android:textAlignment="textStart"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/AppTheme"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/menuFont" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mail_outline_black_24dp"
+                    android:id="@+id/imageView4" />
+
+                <TextView
+                    android:text="@string/company_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/textView9"
+                    android:textAlignment="textStart"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/AppTheme"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/menuFont" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ratingBar2" />
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
